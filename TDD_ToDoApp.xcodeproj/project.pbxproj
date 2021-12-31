@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57CCD0277F6B7F006E704F /* TDD_ToDoApp */,
+				BF57CCDF277F6B86006E704F /* Info.plist */,
 				BF57CCE7277F6B86006E704F /* TDD_ToDoAppTests */,
 				BF57CCF2277F6B86006E704F /* TDD_ToDoAppUITests */,
 				BF57CCCF277F6B7F006E704F /* Products */,
@@ -99,13 +100,10 @@
 		BF57CCD0277F6B7F006E704F /* TDD_ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BF57CCD1277F6B7F006E704F /* AppDelegate.swift */,
-				BF57CCD3277F6B7F006E704F /* SceneDelegate.swift */,
-				BF57CCD5277F6B7F006E704F /* ViewController.swift */,
-				BF57CCD7277F6B7F006E704F /* Main.storyboard */,
-				BF57CCDA277F6B86006E704F /* Assets.xcassets */,
-				BF57CCDC277F6B86006E704F /* LaunchScreen.storyboard */,
-				BF57CCDF277F6B86006E704F /* Info.plist */,
+				BF57CD03277F6BB2006E704F /* Controller */,
+				BF57CD02277F6BA2006E704F /* View */,
+				BF57CD01277F6B9D006E704F /* Model */,
+				BF57CD04277F6BC8006E704F /* SupportingFiles */,
 			);
 			path = TDD_ToDoApp;
 			sourceTree = "<group>";
@@ -126,6 +124,40 @@
 				BF57CCF5277F6B86006E704F /* Info.plist */,
 			);
 			path = TDD_ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		BF57CD01277F6B9D006E704F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF57CD02277F6BA2006E704F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF57CD03277F6BB2006E704F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CCD5277F6B7F006E704F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF57CD04277F6BC8006E704F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CCD1277F6B7F006E704F /* AppDelegate.swift */,
+				BF57CCD3277F6B7F006E704F /* SceneDelegate.swift */,
+				BF57CCD7277F6B7F006E704F /* Main.storyboard */,
+				BF57CCDA277F6B86006E704F /* Assets.xcassets */,
+				BF57CCDC277F6B86006E704F /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
