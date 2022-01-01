@@ -17,6 +17,8 @@
 		BF57CCF4277F6B86006E704F /* TDD_ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CCF3277F6B86006E704F /* TDD_ToDoAppUITests.swift */; };
 		BF57CD06277F6D0B006E704F /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD05277F6D0B006E704F /* TaskTests.swift */; };
 		BF57CD09277F6D93006E704F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD08277F6D93006E704F /* Task.swift */; };
+		BF57CD0B2780C801006E704F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD0A2780C801006E704F /* Location.swift */; };
+		BF57CD0D2780C9AF006E704F /* LcationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD0C2780C9AF006E704F /* LcationTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		BF57CCF5277F6B86006E704F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF57CD05277F6D0B006E704F /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		BF57CD08277F6D93006E704F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		BF57CD0A2780C801006E704F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BF57CD0C2780C9AF006E704F /* LcationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LcationTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57CD08277F6D93006E704F /* Task.swift */,
+				BF57CD0A2780C801006E704F /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57CD05277F6D0B006E704F /* TaskTests.swift */,
+				BF57CD0C2780C9AF006E704F /* LcationTest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			files = (
 				BF57CD09277F6D93006E704F /* Task.swift in Sources */,
 				BF57CCD6277F6B7F006E704F /* ViewController.swift in Sources */,
+				BF57CD0B2780C801006E704F /* Location.swift in Sources */,
 				BF57CCD2277F6B7F006E704F /* AppDelegate.swift in Sources */,
 				BF57CCD4277F6B7F006E704F /* SceneDelegate.swift in Sources */,
 			);
@@ -316,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF57CD06277F6D0B006E704F /* TaskTests.swift in Sources */,
+				BF57CD0D2780C9AF006E704F /* LcationTest.swift in Sources */,
 				BF57CCE9277F6B86006E704F /* TDD_ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
