@@ -23,6 +23,7 @@
 		BF57CD132780CE20006E704F /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD122780CE20006E704F /* TaskManager.swift */; };
 		BF57CD162781EFA0006E704F /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD152781EFA0006E704F /* TaskListViewControllerTests.swift */; };
 		BF57CD182781F444006E704F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD172781F444006E704F /* DataProvider.swift */; };
+		BF57CD1A2781F909006E704F /* DataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD192781F909006E704F /* DataProviderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BF57CD122780CE20006E704F /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		BF57CD152781EFA0006E704F /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		BF57CD172781F444006E704F /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		BF57CD192781F909006E704F /* DataProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57CD152781EFA0006E704F /* TaskListViewControllerTests.swift */,
+				BF57CD192781F909006E704F /* DataProviderTest.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				BF57CD0D2780C9AF006E704F /* LcationTest.swift in Sources */,
 				BF57CD102780CDC1006E704F /* TaskManagerTests.swift in Sources */,
 				BF57CD162781EFA0006E704F /* TaskListViewControllerTests.swift in Sources */,
+				BF57CD1A2781F909006E704F /* DataProviderTest.swift in Sources */,
 				BF57CCE9277F6B86006E704F /* TDD_ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
