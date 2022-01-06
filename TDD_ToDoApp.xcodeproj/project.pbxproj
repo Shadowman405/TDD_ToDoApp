@@ -25,6 +25,7 @@
 		BF57CD182781F444006E704F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD172781F444006E704F /* DataProvider.swift */; };
 		BF57CD1A2781F909006E704F /* DataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD192781F909006E704F /* DataProviderTest.swift */; };
 		BF57CD1C2781FF28006E704F /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD1B2781FF28006E704F /* TaskCell.swift */; };
+		BF57CD1F27878A16006E704F /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57CD1E27878A16006E704F /* TaskCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BF57CD172781F444006E704F /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		BF57CD192781F909006E704F /* DataProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTest.swift; sourceTree = "<group>"; };
 		BF57CD1B2781FF28006E704F /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		BF57CD1E27878A16006E704F /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		BF57CCE7277F6B86006E704F /* TDD_ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				BF57CD1D27878A01006E704F /* View */,
 				BF57CD142781EF79006E704F /* Controller */,
 				BF57CD0E2780CD9F006E704F /* Manager */,
 				BF57CCE8277F6B86006E704F /* TDD_ToDoAppTests.swift */,
@@ -220,6 +223,14 @@
 				BF57CD192781F909006E704F /* DataProviderTest.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF57CD1D27878A01006E704F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CD1E27878A16006E704F /* TaskCellTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			files = (
 				BF57CD06277F6D0B006E704F /* TaskTests.swift in Sources */,
 				BF57CD0D2780C9AF006E704F /* LcationTest.swift in Sources */,
+				BF57CD1F27878A16006E704F /* TaskCellTests.swift in Sources */,
 				BF57CD102780CDC1006E704F /* TaskManagerTests.swift in Sources */,
 				BF57CD162781EFA0006E704F /* TaskListViewControllerTests.swift in Sources */,
 				BF57CD1A2781F909006E704F /* DataProviderTest.swift in Sources */,
