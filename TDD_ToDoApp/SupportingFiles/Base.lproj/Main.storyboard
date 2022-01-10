@@ -180,6 +180,9 @@
                                 <rect key="frame" x="51" y="832" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save" destination="MGz-4O-jPI" eventType="touchUpInside" id="J19-Fs-8Qp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xb-Um-Pg0">
                                 <rect key="frame" x="347" y="832" width="48" height="30"/>

@@ -20,6 +20,7 @@ class NewTaskViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+
     
     var dateFormater: DateFormatter{
         let df = DateFormatter()
@@ -27,12 +28,13 @@ class NewTaskViewController: UIViewController {
         return df
     }
     
-    func save() {
+    @IBAction func save() {
         let titleString = titleTextField.text
         let locationString = locationTextField.text
         let date = dateFormater.date(from: dateTextField.text!)
         let descriptionString = descriptionTextField.text
         let addressString = addresstextField.text
+        
         geocoder.geocodeAddressString(addressString!) {[unowned self] (placemarks,error) in
             let placemark = placemarks?.first
             let coordinate = placemark?.location?.coordinate
@@ -41,4 +43,5 @@ class NewTaskViewController: UIViewController {
             self.taskManager.add(task: task)
         }
     }
+    
 }
