@@ -152,11 +152,51 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ik-g1-u1t">
+                                <rect key="frame" x="159" y="191" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdA-Ce-qgM">
+                                <rect key="frame" x="159" y="260" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-eO-K48">
+                                <rect key="frame" x="159" y="325" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYl-sf-NBi">
+                                <rect key="frame" x="159" y="388" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-vX-RNn">
+                                <rect key="frame" x="51" y="832" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xb-Um-Pg0">
+                                <rect key="frame" x="347" y="832" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e5x-Nk-Ftt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="addresstextField" destination="gqP-eO-K48" id="mPi-gW-p48"/>
+                        <outlet property="cancelButton" destination="2Xb-Um-Pg0" id="1Yv-jX-GHU"/>
+                        <outlet property="dateTextField" destination="LdA-Ce-qgM" id="16Q-4J-Q2q"/>
+                        <outlet property="descriptionTextField" destination="DYl-sf-NBi" id="Tmd-D7-a4w"/>
+                        <outlet property="locationTextField" destination="9ik-g1-u1t" id="XgA-hf-MuT"/>
+                        <outlet property="saveButton" destination="RBp-vX-RNn" id="xSS-nv-P2r"/>
                         <outlet property="titleTextField" destination="jYe-22-4fB" id="GKt-D3-Li9"/>
                     </connections>
                 </viewController>
