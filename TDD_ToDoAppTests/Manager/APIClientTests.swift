@@ -20,42 +20,54 @@ class APIClientTests: XCTestCase {
     override func tearDownWithError() throws {
     }
     
-    func testLoginUsersCorrectHost() {
+    func userLogin() {
         sut.urlSession = mockURLSession
-        
         let completionHandler = {(token: String?,error: Error?) in}
-        sut.login(withName: "name", password: "123456", completionHandler: completionHandler)
+        sut.login(withName: "name", password: "%qwerty", completionHandler: completionHandler)
+    }
+    
+    func testLoginUsersCorrectHost() {
+        userLogin()
         
-        guard let url = mockURLSession.url else {
-            XCTFail()
-            return
-        }
-        
-        let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        XCTAssertEqual(urlComponents?.host, "todoapp.com")
-        XCTAssertEqual(urlComponents?.path, "/login")
+        XCTAssertEqual(mockURLSession.urlComponents?.host, "todoapp.com")
     }
     
     func testLoginUssersCorrectHost() {
-        sut.urlSession = mockURLSession
+        userLogin()
         
-        let completionHandler = {(token: String?,error: Error?) in}
-        sut.login(withName: "name", password: "123456", completionHandler: completionHandler)
+        XCTAssertEqual(mockURLSession.urlComponents?.path, "/login")
+    }
+    
+    func testLoginUsesExpectedQueryParameters() {
+        userLogin()
         
-        guard let url = mockURLSession.url else {
+        guard let queryItmes = mockURLSession.urlComponents?.queryItems else {
             XCTFail()
             return
         }
+        let urlQuetyItemName = URLQueryItem(name: "name", value: "name")
+        let urlQuetyItemPassword = URLQueryItem(name: "password", value: "%qwerty")
         
-        let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        XCTAssertEqual(urlComponents?.path, "/login")
+        XCTAssertTrue(queryItmes.contains(urlQuetyItemName))
+        XCTAssertTrue(queryItmes.contains(urlQuetyItemPassword))
     }
+    
+    
+    
 }
 
 
 extension APIClientTests {
     class MockURLSession: URLSessionProtocol {
         var url: URL?
+        
+        var urlComponents: URLComponents? {
+            guard let url = url else {
+                return nil
+            }
+            return URLComponents(url: url, resolvingAgainstBaseURL: true)
+        }
+        
         func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
             self.url = url
             return URLSession.shared.dataTask(with: url)
