@@ -29,8 +29,8 @@
 		BF66FF5A278A29B400B5AA82 /* NewTaskViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF59278A29B400B5AA82 /* NewTaskViewControllerTests.swift */; };
 		BF66FF5C278A2A3A00B5AA82 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF5B278A2A3A00B5AA82 /* NewTaskViewController.swift */; };
 		BF66FF9A278E016700B5AA82 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF99278E016700B5AA82 /* APIClientTests.swift */; };
-		BF66FF9C278E02A800B5AA82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF9B278E02A800B5AA82 /* APIClient.swift */; };
 		BF66FF9F278E0D7D00B5AA82 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF9E278E0D7D00B5AA82 /* extensions.swift */; };
+		BF66FFA0278F657100B5AA82 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF66FF9B278E02A800B5AA82 /* APIClient.swift */; };
 		BFB30502278A12AE00596CB5 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB30501278A12AE00596CB5 /* DetailViewControllerTests.swift */; };
 		BFB30504278A136900596CB5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB30503278A136900596CB5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -222,7 +222,6 @@
 			children = (
 				BF57CD0F2780CDC1006E704F /* TaskManagerTests.swift */,
 				BF66FF99278E016700B5AA82 /* APIClientTests.swift */,
-				BF66FF9B278E02A800B5AA82 /* APIClient.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -231,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				BF57CD122780CE20006E704F /* TaskManager.swift */,
+				BF66FF9B278E02A800B5AA82 /* APIClient.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -403,6 +403,7 @@
 				BF57CD0B2780C801006E704F /* Location.swift in Sources */,
 				BF57CCD2277F6B7F006E704F /* AppDelegate.swift in Sources */,
 				BF57CCD4277F6B7F006E704F /* SceneDelegate.swift in Sources */,
+				BF66FFA0278F657100B5AA82 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +416,6 @@
 				BF57CD1F27878A16006E704F /* TaskCellTests.swift in Sources */,
 				BF66FF9A278E016700B5AA82 /* APIClientTests.swift in Sources */,
 				BF66FF5A278A29B400B5AA82 /* NewTaskViewControllerTests.swift in Sources */,
-				BF66FF9C278E02A800B5AA82 /* APIClient.swift in Sources */,
 				BF57CD102780CDC1006E704F /* TaskManagerTests.swift in Sources */,
 				BF57CD162781EFA0006E704F /* TaskListViewControllerTests.swift in Sources */,
 				BF57CD1A2781F909006E704F /* DataProviderTest.swift in Sources */,
