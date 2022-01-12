@@ -152,7 +152,7 @@
 				BF57CD1D27878A01006E704F /* View */,
 				BF57CD142781EF79006E704F /* Controller */,
 				BF57CD0E2780CD9F006E704F /* Manager */,
-				BF57CCE8277F6B86006E704F /* TDD_ToDoAppTests.swift */,
+				BF66FFA1278F673200B5AA82 /* Supporting Files */,
 				BF57CCEA277F6B86006E704F /* Info.plist */,
 				BF57CD07277F6D17006E704F /* Model */,
 			);
@@ -260,6 +260,14 @@
 				BF66FF9E278E0D7D00B5AA82 /* extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF66FFA1278F673200B5AA82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF57CCE8277F6B86006E704F /* TDD_ToDoAppTests.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

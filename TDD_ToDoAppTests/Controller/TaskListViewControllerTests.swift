@@ -43,4 +43,27 @@ class TaskListViewControllerTests: XCTestCase {
     func testWhenViewIsLoadedTableDelegateEqualsDataSource() {
         XCTAssertEqual(sut.tableView.delegate as? DataProvider, sut.tableView.dataSource as? DataProvider)
     }
+    
+    func testTaskListVCHasAddBarButtonWithSelfAsTarget() {
+        let target = sut.navigationItem.rightBarButtonItem?.target
+        XCTAssertEqual(target as? TaskListViewController, sut)
+    }
+    
+    func testAddNewtaskPresentsNewTaskVC() {
+        XCTAssertNil(sut.presentedViewController)
+        
+        guard let newTaskButton = sut.navigationItem.rightBarButtonItem,
+              let action = newTaskButton.action else {
+            XCTFail()
+            return
+        }
+        
+        UIApplication.shared.keyWindow?.rootViewController = sut
+        sut.performSelector(onMainThread: action, with: newTaskButton, waitUntilDone: true)
+        XCTAssertNotNil(sut.presentedViewController)
+        XCTAssertTrue(sut.presentedViewController is NewTaskViewController)
+        
+        let newTaskVC = sut.presentedViewController as! NewTaskViewController
+        XCTAssertNotNil(newTaskVC.titleTextField)
+    }
 }
