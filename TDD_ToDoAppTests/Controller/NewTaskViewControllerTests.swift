@@ -109,7 +109,7 @@ class NewTaskViewControllerTests: XCTestCase {
             XCTAssertEqual(longitude, 27.5503093)
             geocoderAnswer.fulfill()
         }
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
     }
     
     func testSaveButtonDismissedNewTaskVC() {
@@ -127,9 +127,10 @@ class NewTaskViewControllerTests: XCTestCase {
         
         mockNewTaskVC.save()
         
-        XCTAssertTrue(mockNewTaskVC.isDismissed)
-    }
-    
+        DispatchQueue.main.asyncAfter(wallDeadline: .now() + 0.05) {
+            XCTAssertTrue(mockNewTaskVC.isDismissed)
+        }
+    }    
 }
 
 
