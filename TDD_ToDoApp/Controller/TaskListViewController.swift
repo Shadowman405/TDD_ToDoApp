@@ -15,11 +15,24 @@ class TaskListViewController: UIViewController {
         super.viewDidLoad()
         let taskManager = TaskManager()
         dataProvider.taskManager = taskManager
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showDetails(withNotification:)), name: NSNotification.Name(rawValue: "DidSelectRowNotification"), object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+    }
+    
+    @objc func showDetails(withNotification notification: Notification){
+        guard
+            let userInfo = notification.userInfo,
+            let task = userInfo["task"] as? Task,
+            let detailViewController = storyboard?.instantiateViewController(identifier: String(describing: DetailViewController.self)) as? DetailViewController else {
+            fatalError()
+        }
+        detailViewController.task = task
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     @IBAction func addNewTask(_ sender: UIBarButtonItem) {
