@@ -36,12 +36,13 @@ class NewTaskViewController: UIViewController {
         let addressString = addresstextField.text
         
         
-        geocoder.geocodeAddressString(addressString!) {[unowned self] (placemarks,error) in
+        geocoder.geocodeAddressString(addressString!) {(placemarks,error) in
             let placemark = placemarks?.first
             let coordinate = placemark?.location?.coordinate
             let location = Location(name: locationString!, coordinate: coordinate)
             let task = Task(title: titleString!, description: descriptionString, location: location, date: date)
             self.taskManager.add(task: task)
+
             
             DispatchQueue.main.async {
                 self.dismiss(animated: true, completion: nil)
