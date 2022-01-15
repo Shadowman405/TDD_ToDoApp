@@ -59,10 +59,8 @@ extension DataProvider: UITableViewDataSource {
         let task: Task
         
         switch section {
-        case .todo:
-            task = taskManager.task(at: indexPath.row)
-        case .done:
-            task = taskManager.doneTask(at: indexPath.row)
+        case .todo: task = taskManager.task(at: indexPath.row)
+        case .done: task = taskManager.doneTask(at: indexPath.row)
         }
 
         cell.configure(withTask: task)
